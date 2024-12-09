@@ -15,6 +15,10 @@ export const generateMetadata = async (
   }
 }
 
+export const generateStaticParams = async () => {
+  return [{ slug: "Test" }]
+}
+
 const BlogDetail = async ({ params }: BlogDetailProps) => {
   const slug = (await params).slug
 
